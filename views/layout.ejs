@@ -1,0 +1,21 @@
+<!-- this whole is a html wrapper for body-->
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        
+        <link rel="stylesheet" href="/css/layout.css">
+        
+    </head>
+
+    <body>
+        <%- include('_header'); %>    <!-- gets rendered from _header -->
+        
+        <%- body%>                    <!-- gets rendered from home & user -->
+
+        <%- include('_footer'); %>    <!-- gets rendered from _footer -->
+        
+        
+    </body>
+</html>
